@@ -81,20 +81,18 @@ class Solution:
             if fruits[fast] not in basket: basket[fruits[fast]] = 1
             else: basket[fruits[fast]] += 1
             while len(basket)>2:
-                # print(fruits[fast],fruits[slow])
-                # print("basket",basket)
-                if fruits[slow] in basket: del basket[fruits[slow]]
+                basket[fruits[slow]] -= 1
+                if basket[fruits[slow]]==0: del basket[fruits[slow]]
                 slow += 1
             sublength = sum(basket.values())
-            if result < sublength: result = sublength
             result = max(result,sublength)
         return result
 
 s=Solution()
-# print(s.totalFruit([1,2,1]))
-# print(s.totalFruit([0,1,2,2]))
-# print(s.totalFruit([1,2,3,2,2]))
-# print(s.totalFruit([3,3,3,1,2,1,1,2,3,3,4]))
+print(s.totalFruit([1,2,1]))
+print(s.totalFruit([0,1,2,2]))
+print(s.totalFruit([1,2,3,2,2]))
+print(s.totalFruit([3,3,3,1,2,1,1,2,3,3,4]))
 print(s.totalFruit([4,1,1,1,3,1,7,5]))
 
 
