@@ -68,16 +68,27 @@ class ListNode:
         self.next = None
 
 ## Two Pointer
+# class Solution:
+#     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+#         cur = head
+#         pre = None
+#         while cur!= None:
+#             temp = cur.next
+#             cur.next = pre
+#             pre = cur
+#             cur = temp
+#         return pre
+
+## Recursion
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        cur = head
-        pre = None
-        while cur!= None:
+        def reverse(pre, cur):
+            if not cur:
+                return pre
             temp = cur.next
             cur.next = pre
-            pre = cur
-            cur = temp
-        return pre
+            return reverse(cur, temp)
+        return reverse(None, head)
 
 
 
