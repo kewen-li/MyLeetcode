@@ -82,6 +82,11 @@ class Node:
         self.next = next
 
 
+class Node:
+    def __init__(self, val=0, next=None) -> None:
+        self.val = val
+        self.next = next
+        
 class MyLinkedList:
 
     def __init__(self):
@@ -90,7 +95,7 @@ class MyLinkedList:
 
     def get(self, index: int) -> int:
         if 0>index or index >= self._count: return -1
-        node = self.head
+        node = self._head
         for _ in range(index+1):
           node = node.next
         return node.val
@@ -103,8 +108,9 @@ class MyLinkedList:
         self.addAtIndex(self._count,val)
 
     def addAtIndex(self, index: int, val: int) -> None:
-        if index > self._count or index < 0:
-          return 
+         
+        if index < 0: index = 0
+        elif index > self._count: return
         newNode = Node(val)
         prevNode, curNode = None, self._head
         self._count += 1 ## Add count
@@ -112,20 +118,21 @@ class MyLinkedList:
         for _ in range(index+1):
           prevNode, curNode = curNode, curNode.next
         else:
-          prevNode, newNode.next = newNode, curNode
+          prevNode.next, newNode.next = newNode, curNode
         
 
     def deleteAtIndex(self, index: int) -> None:
-        if index > self._count or index < 0:
-          return 
+        # if index > self._count or index < 0:
+        #   return 
+        if 0 <= index < self._count:
+            # 计数-1
+            prevNode, curNode = None, self._head
+            self._count -= 1 ## Subtract count
 
-        prevNode, curNode = None, self._head
-        self._count -= 1 ## Subtract count
-  
-        for _ in range(index+1):
-          prevNode, curNode = curNode, curNode.next
-        else:
-          prevNode.next, curNode = curNode.next, None
+            for _ in range(index+1):
+              prevNode, curNode = curNode, curNode.next
+            else:
+              prevNode.next, curNode.next = curNode.next, None
 
 # Your MyLinkedList object will be instantiated and called as such:
 # obj = MyLinkedList()
