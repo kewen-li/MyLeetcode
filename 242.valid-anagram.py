@@ -47,9 +47,21 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
-        for char in set(s):
-            if s.count(char) != t.count(char):
-                return False
-        return True
+        d = dict()
+        for i in s:
+            if i in d:
+                d[i] += 1
+            else:
+                d[i] = 1
+        for i in t:
+            if i in d and d[i] > 0:
+                d[i] -= 1
+        print(d)
+        if sum(d.values()) == 0:
+            return True   
+        return False
 
+s = Solution()
+
+print(s.isAnagram("aacc","ccac"))
 # @lc code=end
