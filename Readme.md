@@ -24,5 +24,16 @@
 
 ### Hash Table
 >  当我们遇到了要快速判断一个元素是否出现集合里的时候，就要考虑哈希法
-**242** 
+> “小写字符”，“出现频率”， 这些关键字都是为哈希法量身定做的啊
+1. is Anagram  
+   242 383 49 438  
+2. Find Common Characters   
+   1002
+3. Intersection of Two Arrays   
+   349  
+4. Sum  
+   1, 454
+
+
+
 
