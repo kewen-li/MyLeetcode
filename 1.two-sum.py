@@ -7,26 +7,28 @@
 # @lc code=start
 from typing import List
 
-### Two-Pointer
+# Two-Pointer
 # class Solution:
 #     def twoSum(self, nums: List[int], target: int) -> List[int]:
 #         for i in range(len(nums)):
-#             for j in range(i+1,len(nums)):    
+#             for j in range(i+1,len(nums)):
 #                 if (nums[i]+nums[j]) == target:
 #                     return [i,j]
 
 
-### Hash table
+# Hash table
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
-        for index, value in enumerate(nums):
-            remain = target - value
-            if remain in seen:
-                return [index, seen[remain]]
-            else:
-                seen[value] = index 
-        
-        
+        d = dict()
+        for i in range(len(nums)):
+            res = target - nums[i]
+            print(res)
+            if res in d:
+                print(d)
+                return [d[res], i]
+            d[nums[i]] = i
+
+
+s = Solution()
+print(s.twoSum([3, 2, 4], 6))
 # @lc code=end
-                
