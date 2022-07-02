@@ -35,9 +35,5 @@
 4. Sum  
    1, 454
 
-
-
-
-
 ### String  
-**344**,**541** Reverse String   
+**151**,**344**,**541** Reverse String   
