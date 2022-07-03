@@ -36,4 +36,11 @@
    1, 454
 
 ### String  
-**151**,**344**,**541** Reverse String   
+**151**,**344**,**541** Reverse String  
+
+### Stack and Queue
+> stack和queue是 container adapter， 可以指定用list， vector， dequeue实现。不提供iterator 遍历
+**Implement Queue Using Stack** 232
+**Implement Stack Using Queue** 225
+**Valid Parentheses** 20
+
