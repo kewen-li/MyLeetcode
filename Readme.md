@@ -40,8 +40,9 @@
 
 ### Stack and Queue
 > stack和queue是 container adapter， 可以指定用list， vector， dequeue实现。不提供iterator 遍历
-**Implement Queue Using Stack** 232
-**Implement Stack Using Queue** 225
-**Valid Parentheses** 20
-**Reverse Polish Polish Notation** 150
-
+**Implement Queue Using Stack** 232  
+**Implement Stack Using Queue** 225  
+**Valid Parentheses** 20  
+**Remove All Adjancents** 1047  
+**Reverse Polish Polish Notation** 150  
+**Sliding Window Maximum** 239
