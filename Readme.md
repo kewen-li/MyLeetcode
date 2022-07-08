@@ -47,3 +47,7 @@
 **Remove All Adjancents** 1047    
 **Reverse Polish Polish Notation** 150    
 **Sliding Window Maximum** 239  
+
+### Binary Tree
+**Traverse with Recursion**  
+144(pre-order), 145(post-order), 94(in-order)  
