@@ -66,19 +66,41 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Recursion 
+# class Solution:
+#     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+#         result = []
+
+#         def traversal(root: TreeNode):
+#             if not root:
+#                 return
+#             traversal(root.left)  # Left
+#             result.append(root.val)  # Root
+#             traversal(root.right)  # Right
+
+#         traversal(root)
+#         return result
 
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
-
-        def traversal(root: TreeNode):
-            if not root:
-                return
-            traversal(root.left)  # Left
-            result.append(root.val)  # Root
-            traversal(root.right)  # Right
-
-        traversal(root)
+        s = []
+        if root:
+            s.append(root)
+        while s:
+            node = s.pop()
+            if node:
+                #R M L
+                if node.right:
+                    s.append(node.right)
+                s.append(node)
+                s.append(None)
+                if node.left:
+                    s.append(node.left)
+            else:
+                node = s.pop()
+                result.append(node.val)
         return result
+
 # @lc code=end
 

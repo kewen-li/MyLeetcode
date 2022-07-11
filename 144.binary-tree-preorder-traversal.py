@@ -67,19 +67,43 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Recursion
+# class Solution:
+#     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+#         result = []
 
+#         def traversal(root: TreeNode):
+#             if not root:
+#                 return
+#             result.append(root.val)  # Root
+#             traversal(root.left)  # Left
+#             traversal(root.right)  # Right
+#         traversal(root)
+#         return result
+
+
+# Loop
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
+        s = []
+        if root:
+            s.append(root)
+        while s:
+            node = s.pop()
+            if node:
+                # 右左中
+                if node.right:
+                    s.append(node.right)
+                if node.left:
+                    s.append(node.left)
+                s.append(node)
+                s.append(None)
 
-        def traversal(root: TreeNode):
-            if not root:
-                return
-            result.append(root.val)  # Root
-            traversal(root.left)  # Left
-            traversal(root.right)  # Right
-        traversal(root)
+            else:
+                node = s.pop()
+                result.append(node.val)
         return result
-
+        
 # @lc code=end
 
