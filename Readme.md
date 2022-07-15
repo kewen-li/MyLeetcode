@@ -55,5 +55,13 @@
 **BFS: Traverse with Recursion + Loop**  
 102(level-order)  
 
+**Symmetric Tree**  
+100, 101, 572  
+
+**Deepest Binary Tree**
+104, 559
+
+
+
 
 
