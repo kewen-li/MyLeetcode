@@ -59,7 +59,7 @@
 100, 101, 572  
 
 **Deepest Binary Tree**
-104, 559
+104, 559, 111(min binary tree)
 
 
 
