@@ -49,6 +49,12 @@
 **Sliding Window Maximum** 239  
 
 ### Binary Tree
+二叉树节点的深度：指从根节点到该节点的最长简单路径边的条数。
+二叉树节点的高度：指从该节点到叶子节点的最长简单路径边的条数。
+平衡二叉树: 其左子树高度和其右子树高度的差值
+
+二叉树深度 和 二叉树高度的差异，求深度适合用前序遍历，而求高度适合用后序遍历。
+
 **DFS: Traverse with Recursion + Loop**   
 144(pre-order), 145(post-order), 94(in-order)    
 
@@ -60,6 +66,10 @@
 
 **Deepest Binary Tree**
 104, 559, 111(min binary tree)
+
+**Completed Tree** 222    
+
+**is Balanced** 110    
 
 
 
