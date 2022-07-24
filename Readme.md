@@ -69,7 +69,17 @@
 
 **Completed Tree** 222    
 
-**is Balanced** 110    
+**is Balanced** 110   
+
+**Path**  
+257(ALL), 112 (Path Sum)
+
+**Left Leave**  
+404(Sum), 513 (Value)
+
+
+
+
 
 
 
