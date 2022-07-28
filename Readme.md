@@ -80,8 +80,9 @@
 **Merge Two Trees**   
 617  
 
-**Binary Search Tree**    
-700(Search), 98(Validate), 530(Min Absolute difference)
+**Binary Search Tree**
+> In Order Better
+700(Search), 98(Validate), 530(Min Absolute difference), 501(Find Mode)
 
 
 
