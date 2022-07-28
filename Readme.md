@@ -77,6 +77,12 @@
 **Left Leave**  
 404(Sum), 513 (Value)
 
+**Merge Two Trees**   
+617  
+
+**Binary Search Tree**    
+700(Search), 98(Validate), 530(Min Absolute difference)
+
 
 
 
