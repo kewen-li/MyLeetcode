@@ -88,7 +88,7 @@
 236(binary Tree), 235(binary Search Tree)
 
 **Construct Tree**
-106(Inorder + Postorder) + 105(PreOrder + InOrder)
+106(Inorder + Postorder), 105(PreOrder + InOrder), 654(Maximum Binary)
 
 
 
