@@ -87,7 +87,7 @@
 **Binary Search Tree**  
 > In Order Better  
 
-700(Search), 98(Validate), 530(Min Absolute difference), 501(Find Mode), 701(Insert), 450(Delete)
+700(Search), 98(Validate), 530(Min Absolute difference), 501(Find Mode), 701(Insert), 450(Delete), 669(Trim)
 
 **Lowest Common Ancestor**    
 236(binary Tree), 235(binary Search Tree)
